@@ -1,0 +1,83 @@
+:root {
+  --primary: #1d3557;
+  --primary-light: #457b9d;
+  --secondary: #a8dadc;
+  --secondary-light: #f1faee;
+  --highlight: #e63946;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  padding: 10px;
+  color: var(--secondary-light);
+  background: linear-gradient(30deg, var(--primary), var(--primary-light));
+}
+
+.header--logo {
+  width: 60px;
+}
+
+.header--title {
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form--input {
+  display: flex;
+}
+
+.form--input1 {
+  margin-right: auto;
+}
+
+.form--input1,
+.form--input2 {
+  border-radius: 5px;
+  text-indent: 5px;
+  font-size: 1rem;
+  color: var(--primary);
+  padding: 1rem;
+  width: 48%;
+  border: 2px solid var(--primary-light);
+  font-family: "Karla", sans-serif;
+}
+
+.form--button {
+  font-family: "Karla", sans-serif;
+  padding: 1.25rem;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  color: var(--secondary-light);
+  background-color: var(--highlight);
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
