@@ -23,14 +23,18 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  background-color: #eee;
+}
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   gap: 20px;
   padding: 10px;
   color: var(--secondary-light);
-  background: linear-gradient(30deg, var(--primary), var(--primary-light));
+  background-color: var(--primary);
 }
 
 .header--logo {
@@ -45,7 +49,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 4rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -80,4 +84,45 @@ html {
   border: 0;
   cursor: pointer;
   font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.form--button:hover {
+  background-color: var(--primary);
+}
+
+.meme {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.meme--image {
+  width: 100%;
+  border-radius: 3px;
 }
